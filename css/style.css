@@ -9,7 +9,7 @@ body{
     background-color: white;
 }
 
-p{
+p, h5{
     line-height: 25px;
 }
 
@@ -64,5 +64,57 @@ h2{
     border: none; 
     border-radius: 50px 50px 50px 50px;
     width: 300px;
+    font-weight: bold;
+}
+
+/* Blocco 2 */
+
+/* Immagine e testo */
+
+.violet{
+    background-color: #9792E4;
+    margin-bottom: 30px;
+}
+
+.white{
+    color: white;
+}
+
+h3{
+    margin: 20px 0 20px;
+}
+
+.noflex{
+    display: block;
+}
+
+/* Immagine e testo con bordo */
+
+.img-textcontainer2{
+    border-radius: 44px 44px 44px 44px;
+}
+
+.bwhite{
+    background-color: white;
+}
+
+.center{
+    text-align: center;
+}
+
+.center>span {
+    background-color: #9792E4;
+    border-radius: 50%;
+    padding: 5px 10px; 
+    height: 50px;
+    width: 50px;
+    align-self: center;
+}
+
+/* Blocco 3 */
+
+.violetext{
+    color: #9792E4;
+    font-size: 30px;
     font-weight: bold;
 }
