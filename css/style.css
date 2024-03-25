@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    background-color: white;
+}
+
+header{
+    background-color: #0084FD;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
