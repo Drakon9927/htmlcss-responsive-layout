@@ -10,7 +10,8 @@ body{
 }
 
 p, h5{
-    line-height: 25px;
+    line-height: 50px;
+    margin-top: 20px;
 }
 
 header{
@@ -20,6 +21,17 @@ header{
     justify-content: space-around;
 }
 
+.mediumfont{
+    font-size: 25px;
+}
+
+.bigfont{
+    font-size: 40px;
+}
+
+.margins{
+    margin: 40px 40px;
+}
 /* Main blocco con riquadri */
 
 .container{
@@ -73,7 +85,6 @@ h2{
 
 .violet{
     background-color: #9792E4;
-    margin-bottom: 30px;
 }
 
 .white{
@@ -117,4 +128,62 @@ h3{
     color: #9792E4;
     font-size: 30px;
     font-weight: bold;
+    margin-bottom: 10px;
 }
+
+.violet-btn{
+    color: white;
+    background-color: #9792E4;
+    padding: 15px 20px;
+    cursor: pointer; 
+    border: none; 
+    border-radius: 50px 50px 50px 50px;
+    width: 200px;
+}
+
+.roundb{
+    border-radius: 23px 23px 23px 23px;
+    margin-bottom: 30px;
+}
+
+.container>span:first-child{
+    color: lightgray;
+}
+
+#bigyellow{
+    font-size: 60px;
+    color: #FCC060;
+    font-weight: bold;
+    margin: 50px 0;
+}
+
+.lastbtn{
+    border-radius: 50px 50px 50px 50px;
+    width: 300px;
+    padding: 15px 20px;
+    cursor: pointer; 
+    border: none; 
+    margin: 10px 0;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+/* Footer */
+
+.black{
+    background-color: #333333;
+    font-size: 25px;
+}
+
+footer p>span{
+    font-size: 16px;
+    color: #9792E4;
+}
+
+
+
+
+
+
