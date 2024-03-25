@@ -15,3 +15,16 @@ header{
     flex-direction: row;
     justify-content: space-around;
 }
+
+.container{
+    padding: 30px;
+    width: 100%;
+}
+
+.imgbox{
+    width: 100%;
+}
+
+.imgbox>img{
+    width: 100%;
+}
