@@ -9,6 +9,10 @@ body{
     background-color: white;
 }
 
+p{
+    line-height: 25px;
+}
+
 header{
     background-color: #0084FD;
     display: flex;
@@ -16,15 +20,49 @@ header{
     justify-content: space-around;
 }
 
+/* Main blocco con riquadri */
+
 .container{
     padding: 30px;
     width: 100%;
 }
 
+.textbox{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    font-size: 20px;
+}
+
 .imgbox{
+    display: flex;
     width: 100%;
+    justify-content: center;
 }
 
 .imgbox>img{
-    width: 100%;
+    width: 50%;
+    display: block;
+}
+
+.bigcolumn, .column{
+    background-color: #B5DDFF;
+    border-radius: 21px 21px 21px 21px;
+    margin: 20px;
+}
+
+h2{
+    color: #168EFD;
+}
+
+#blue-btn{
+    background-color: #0084FD;
+    color: white;
+    padding: 15px 20px;
+    cursor: pointer; 
+    border: none; 
+    border-radius: 50px 50px 50px 50px;
+    width: 300px;
+    font-weight: bold;
 }
