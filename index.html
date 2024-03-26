@@ -5,75 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Layout</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
     <!-- Header Logo e Mobile:Fontawesome/Desktop:links di testo -->
     <Header>
         <div class="leftbox">
-            Logo
+            <img src="./img/logo.png" alt="">
         </div>
 
         <div class="rightbox">
-            font awesome
+            <i class="fa fa-navicon" style="font-size:36px"></i>
         </div>
     </Header>
 
     <!-- Contenuti in colonna/raw e centrati nel desktop -->
-    <section class="container">
-        <!-- colonna grande -->
-        <div class="bigcolumn">
-            
-            <div class="textbox">
-                <h2>Get a demo application</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, velit. Atque alias nostrum iste aspernatur inventore, dignissimos autem omnis et tempora temporibus unde facilis quas ad repudiandae ipsum deserunt animi?</p>
+    <div class="wrap">
 
-                <button id="blue-btn">App Store</button>
+        <section class="container flex">
+            <!-- colonna grande -->
+            <div class="bigcolumn">
+                
+                <div class="textbox">
+    
+                   
+                    <h2>Get a demo application</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, velit. Atque alias nostrum iste aspernatur inventore, dignissimos autem omnis et tempora temporibus unde facilis quas ad repudiandae ipsum deserunt animi?</p>
+    
+                    <button id="blue-btn">
+                        <i class="fa fa-apple"></i>
+                         App Store</button>
+    
+                </div>
+    
+                <div class="imgbox">
+                    <img src="./img/phone.png" alt="">
+    
+                </div>
+    
+            </div>
+            <!-- Colonna 1 -->
+            <div class="column">
+                <div class="textbox center">
+                    <i class="fa fa-file-code-o bluecolor" style="font-size:48px"></i>
+                    <h2>Clean code</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, velit. Atque alias nostrum iste aspernatur inventore, dignissimos autem omnis et tempora temporibus unde facilis quas ad repudiandae ipsum deserunt animi?</p>
+                </div>
+            </div>
+            <!-- Colonna 2 -->
+            <div class="column">
+                <div class="textbox center">
+                    <i class="fa fa-compass bluecolor" style="font-size:48px"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, velit. Atque alias nostrum iste aspernatur inventore, dignissimos autem omnis et tempora temporibus unde facilis quas ad repudiandae ipsum deserunt animi?</p>
+                </div>
+            </div>
+            <!-- Colonna 3 -->
+            <div class="column">
+                <div class="textbox center">
+                    <i class="fa fa-address-card-o bluecolor" style="font-size:48px"></i>
+                    <h2>Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, velit. Atque alias nostrum iste aspernatur inventore, dignissimos autem omnis et tempora temporibus unde facilis quas ad repudiandae ipsum deserunt animi?</p>
+                </div>
+            </div>
+            <!-- Colonna 4 -->
+            <div class="column">
+                <div class="textbox center">
+                    <i class="fa fa-bullhorn bluecolor" style="font-size:48px"></i>
+                    <h2>Branding</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, velit. Atque alias nostrum iste aspernatur inventore, dignissimos autem omnis et tempora temporibus unde facilis quas ad repudiandae ipsum deserunt animi?</p>
+                </div>
+            </div>
+        </section>
 
-            </div>
-
-            <div class="imgbox">
-                <img src="./imgdiprova.jpg" alt="">
-
-            </div>
-
-        </div>
-        <!-- Colonna 1 -->
-        <div class="column">
-            <div class="textbox">
-                <h2>Clean code</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, velit. Atque alias nostrum iste aspernatur inventore, dignissimos autem omnis et tempora temporibus unde facilis quas ad repudiandae ipsum deserunt animi?</p>
-            </div>
-        </div>
-        <!-- Colonna 2 -->
-        <div class="column">
-            <div class="textbox">
-                <h2>Web Design</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, velit. Atque alias nostrum iste aspernatur inventore, dignissimos autem omnis et tempora temporibus unde facilis quas ad repudiandae ipsum deserunt animi?</p>
-            </div>
-        </div>
-        <!-- Colonna 3 -->
-        <div class="column">
-            <div class="textbox">
-                <h2>Development</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, velit. Atque alias nostrum iste aspernatur inventore, dignissimos autem omnis et tempora temporibus unde facilis quas ad repudiandae ipsum deserunt animi?</p>
-            </div>
-        </div>
-        <!-- Colonna 4 -->
-        <div class="column">
-            <div class="textbox">
-                <h2>Branding</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, velit. Atque alias nostrum iste aspernatur inventore, dignissimos autem omnis et tempora temporibus unde facilis quas ad repudiandae ipsum deserunt animi?</p>
-            </div>
-        </div>
-    </section>
+    </div>
+    
 
     <!-- Blocco 2 - Altro container -->
     <section class="container violet">
         <!-- Immagine e testo -->
         <div class="img-textcontainer">
             <div class="imgbox noflex">
-                <img src="./imgdiprova.jpg" alt="">
+                <img src="./img/planning1.png" alt="">
 
             </div>
 
@@ -87,7 +101,7 @@
         <!-- Immagine e resto (con bordi e colori diversi) -->
         <div class="img-textcontainer2 bwhite">
             <div class="imgbox">
-                <img src="./imgdiprova.jpg" alt="">
+                <img src="./img/planning2.png" alt="">
 
             </div>
 
@@ -96,7 +110,7 @@
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, velit. Atque alias nostrum iste aspernatur inventore, dignissimos autem omnis et tempora temporibus unde facilis quas ad repudiandae ipsum deserunt animi?</p>
 
-                <span>simbolo</span>
+                <span style='font-size:25px;'>&#8595;</span>
             </div>
         </div>
         
@@ -111,25 +125,28 @@
             <p>We place huge value on strong relationships and have seen the benefit they bring to our business. Customer feedback is vital in helping us to get it right.</p>
         </div>
         <!-- Riquadro 1 -->
-        <div class="img-textcontainer2 violet">
-            <div class="imgbox">
-                <img src="./imgdiprova.jpg" alt="">
-
-            </div>
-
-            <div class="textbox center white">
-
-                <p>"*Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam perspiciatis nihil quos tenetur velit saepe? Quasi esse, est aliquid earum a, cum veritatis ex natus perferendis dolores, minus laboriosam odio".</p>
-
-                <p><strong>NAT REYNOLDS</strong></p>
-            </div>
+        <div class="img-textcontainer2 violet flexrow">
+           
+                <div class="imgbox tonda flexstart">
+                    <img class="tonda" src="./img/testimonial1.jpg" alt="">
+    
+                </div>
+    
+                <div class="textbox center white flexend">
+    
+                    <p>"*Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam perspiciatis nihil quos tenetur velit saepe? Quasi esse, est aliquid earum a, cum veritatis ex natus perferendis dolores, minus laboriosam odio".</p>
+    
+                    <p class="alignself"><strong>NAT REYNOLDS</strong></p>
+                </div>
+           
+           
         </div>
 
         <!-- Riquadro 2 -->
 
         <div class="img-textcontainer2 violet">
-            <div class="imgbox">
-                <img src="./imgdiprova.jpg" alt="">
+            <div class="imgbox tonda">
+                <img class="tonda" src="./img/testimonial2.jpg" alt="">
 
             </div>
 
@@ -143,13 +160,13 @@
 
         <!-- Riquadro 3 -->
 
-        <div class="img-textcontainer2 violet">
-            <div class="imgbox">
-                <img src="./imgdiprova.jpg" alt="">
+        <div class="img-textcontainer2 violet margins">
+            <div class="imgbox tonda">
+                <img class="tonda" src="./img/testimonial3.jpg" alt="">
 
             </div>
 
-            <div class="textbox center white">
+            <div class="textbox center white">  
 
                 <p>"*Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam perspiciatis nihil quos tenetur velit saepe? Quasi esse, est aliquid earum a, cum veritatis ex natus perferendis dolores, minus laboriosam odio".</p>
 
@@ -162,7 +179,7 @@
         <div class="wrap">
             <!-- Box 1 -->
             <div class="textbox bwhite roundb">
-                <p class="violetext">01</p>
+                <p class="violetext bigfont">01</p>
 
                 <p class="violetext">High Quality</p>
 
@@ -174,7 +191,7 @@
 
             <!-- Box 2 -->
             <div class="textbox bwhite roundb">
-                <p class="violetext">02</p>
+                <p class="violetext bigfont">02</p>
 
                 <p class="violetext">High Quality</p>
 
@@ -186,7 +203,7 @@
 
             <!-- Box 3 -->
             <div class="textbox bwhite roundb">
-                <p class="violetext">03</p>
+                <p class="violetext bigfont">03</p>
 
                 <p class="violetext">High Quality</p>
 
@@ -198,7 +215,7 @@
 
             <!-- Box 4 -->
             <div class="textbox bwhite roundb">
-                <p class="violetext">04</p>
+                <p class="violetext bigfont">04</p>
 
                 <p class="violetext">High Quality</p>
 
@@ -210,7 +227,7 @@
 
             <!-- Box 5 -->
             <div class="textbox bwhite roundb">
-                <p class="violetext">05</p>
+                <p class="violetext bigfont">05</p>
 
                 <p class="violetext">High Quality</p>
 
@@ -222,7 +239,7 @@
 
             <!-- Box 6 -->
             <div class="textbox bwhite roundb">
-                <p class="violetext">06</p>
+                <p class="violetext bigfont">06</p>
 
                 <p class="violetext">High Quality</p>
 
@@ -247,8 +264,8 @@
         <!-- About us Blocco -->
 
         <div class="textbox">
-            <div class="imgbox">
-                <img src="#" alt="">
+            <div class="imgbox tonda">
+                <img class="tonda" src="./img/about.jpg" alt="">
                 <span>''</span>
             </div>
 

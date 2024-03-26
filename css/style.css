@@ -10,7 +10,7 @@ body{
 }
 
 p, h5{
-    line-height: 50px;
+    line-height: 40px;
     margin-top: 20px;
 }
 
@@ -25,13 +25,14 @@ header{
     font-size: 25px;
 }
 
-.bigfont{
-    font-size: 40px;
+.margins{
+    margin-bottom: 30px;
 }
 
-.margins{
-    margin: 40px 40px;
+.rightbox>i{
+    color: white    ;
 }
+
 /* Main blocco con riquadri */
 
 .container{
@@ -53,9 +54,14 @@ header{
     justify-content: center;
 }
 
+.imgbox>.tonda{
+    height: 200px;
+    width: 200px;
+}
+
 .imgbox>img{
-    width: 50%;
     display: block;
+    width: 50%;
 }
 
 .bigcolumn, .column{
@@ -64,8 +70,8 @@ header{
     margin: 20px;
 }
 
-h2{
-    color: #168EFD;
+h2, .bluecolor{
+    color: #0084FD  ;
 }
 
 #blue-btn{
@@ -77,6 +83,11 @@ h2{
     border-radius: 50px 50px 50px 50px;
     width: 300px;
     font-weight: bold;
+}
+
+.tonda{
+    margin-top: 20px;
+    border-radius: 50%;
 }
 
 /* Blocco 2 */
@@ -103,6 +114,7 @@ h3{
 
 .img-textcontainer2{
     border-radius: 44px 44px 44px 44px;
+    margin-bottom: 20px;
 }
 
 .bwhite{
@@ -181,6 +193,78 @@ footer p>span{
     font-size: 16px;
     color: #9792E4;
 }
+
+.bigfont{
+    font-size: 40px;
+}
+
+/* Media Query Tablet*/
+
+@media screen and (min-width: 840px) {
+
+    .wrap{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flex{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .bigcolumn{
+        width: calc(50% - 10px);
+    }
+
+    .column{
+        width: calc(30% - 10px);
+        margin-top: 20px;
+    }
+
+    .container>.column:first-child, .bigcolumn {
+        width: calc(62% - 10px);
+    }
+
+    .container>.column:not(:first-child) {
+        width: calc(29.333% - 10px);
+
+}
+
+/* Riquadri viola */
+
+.img-textcontainer2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
+} 
+
+.img-textcontainer2 .imgbox {
+    flex-basis: 20%; 
+    max-width: 20%; 
+    justify-content: flex-start;
+}
+
+.img-textcontainer2 .textbox {
+    flex-basis: 75%; 
+    max-width: 75%; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+}
+
+/* 6 roundb wrap */
+
+
+
+
+
+
 
 
 
