@@ -18,7 +18,7 @@ header{
     background-color: #0084FD;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .mediumfont{
@@ -31,6 +31,10 @@ header{
 
 .rightbox>i{
     color: white    ;
+}
+
+.leftbox, .rightbox{
+    margin: 0 70px;
 }
 
 /* Main blocco con riquadri */
@@ -59,9 +63,13 @@ header{
     width: 200px;
 }
 
+#cinquantapercento{
+    width: 50%;
+}
+
 .imgbox>img{
     display: block;
-    width: 50%;
+    width: 100%;
 }
 
 .bigcolumn, .column{
@@ -86,7 +94,7 @@ h2, .bluecolor{
 }
 
 .tonda{
-    margin-top: 20px;
+    margin: 20px;
     border-radius: 50%;
 }
 
@@ -235,9 +243,20 @@ footer p>span{
 
 }
 
-/* Riquadri viola */
+/* Immagine e Testo 2° blocco fixes */
 
-.img-textcontainer2 {
+.flexcolumn{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
+
+
+/* Riquadri viola */
+                        /* Blocco "About us" */
+.img-textcontainer2, .row {
     display: flex;
     flex-direction: row;
     align-items: center; 
@@ -246,7 +265,6 @@ footer p>span{
 
 .img-textcontainer2 .imgbox {
     flex-basis: 20%; 
-    max-width: 20%; 
     justify-content: flex-start;
 }
 
@@ -259,6 +277,14 @@ footer p>span{
 }
 
 /* 6 roundb wrap */
+
+.roundb{
+    width: calc(50% - 50px);
+    margin-right: 15px;
+}
+
+
+
 
 
 
