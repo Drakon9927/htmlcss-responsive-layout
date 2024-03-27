@@ -19,6 +19,10 @@ header{
     background-color: #0084FD;   
 }
 
+.desktopcontent{
+    display: none;
+}
+
 .flexwrapperrow{
     display: flex;
     flex-direction: row;
@@ -324,6 +328,41 @@ p>i{
     .flexwrapperrow, .wrap, .maxwidth, .aboutuswidth {
         max-width: 70%; 
         margin: 0 auto;
+    }
+
+    header>.flexwrapperrow{
+        max-width: 62%;
+    }
+
+
+    .rightbox {
+        display: none;
+    }
+
+    .leftbox{
+        margin: 0;
+    }
+
+
+    .desktopcontent{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+        color: white;
+        margin: 5px;
+    }
+
+    .desktopcontent>button{
+        padding: 5px 10px;
+        margin: auto;
+        width: 50%;
+        color: black;
+        font-size: 15px;
+    }
+
+    .leftbox, .rightbox{
+        padding: 15px;
     }
 
     .background>.container {
